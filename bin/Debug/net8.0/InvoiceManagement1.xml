@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InvoiceManagement1</name>
+    </assembly>
+    <members>
+        <member name="M:InvoiceManagement1.Controllers.AuthController.Login(InvoiceManagement1.DTOs.UserLoginDto)">
+            <summary>
+            Login and get JWT token.
+            </summary>
+        </member>
+    </members>
+</doc>
