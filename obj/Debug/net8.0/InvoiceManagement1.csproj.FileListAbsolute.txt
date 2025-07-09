@@ -521,3 +521,4 @@
 /Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/obj/Debug/net8.0/InvoiceManagement1.genruntimeconfig.cache
 /Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/obj/Debug/net8.0/ref/InvoiceManagement1.dll
 /Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/bin/Debug/net8.0/appsettings.Production.json
+/Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/obj/Debug/net8.0/InvoiceManagement1.sourcelink.json

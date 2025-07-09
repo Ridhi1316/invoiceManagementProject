@@ -8,9 +8,10 @@ using Serilog;
 using System.Text;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
+using Microsoft.AspNetCore.Mvc;
 
 // Environment.SetEnvironmentVariable("ASPNETCORE_ENVIRONMENT", "Production");
-
+Console.WriteLine("🚀 Starting Invoice Management System...");
 var builder = WebApplication.CreateBuilder(args);
 
 // Logging
@@ -26,6 +27,11 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Repositories & Controllers
 builder.Services.AddScoped<IInvoiceRepository, InvoiceRepository>();
 builder.Services.AddControllers();
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    options.SuppressModelStateInvalidFilter = true;
+});
+
 // Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
@@ -82,7 +88,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.WebHost.ConfigureKestrel(options =>
 {
-    options.ListenAnyIP(80); // Docker maps external 8080 to container port 80
+    options.ListenAnyIP(80); // Docker maps external 8080 to container port 80, pass port number that runs locally
 });
 
 var app = builder.Build();
@@ -97,4 +103,3 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
-
