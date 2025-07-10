@@ -23,10 +23,10 @@ namespace InvoiceManagement1.Controllers
         [HttpPost("login")]
         public IActionResult Login([FromBody] UserLoginDto loginDto)
         {
-            // 🔹 Hardcoded check or use IUserService if implemented
+            // Hardcoded check or use IUserService if implemented
             if (loginDto.Username == "admin" && loginDto.Password == "admin123")
             {
-                // ✅ Generate token using static method
+                // Generate token using static method
                 var token = TokenService.GenerateToken(loginDto.Username, _configuration["JwtSettings:SecretKey"]);
                 return Ok(new { token });
             }

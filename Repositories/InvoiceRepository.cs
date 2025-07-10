@@ -1,4 +1,4 @@
-// Helps isolate data access logic using the Repository Pattern. Makes testing easier (mock repository).
+// Helps isolate data access logic using the Repository Pattern.
 // Clean data access abstraction (helps with unit tests, SOLID)
 using System;
 using System.Collections.Generic;

@@ -1,7 +1,4 @@
 // DTOs/ (Data Transfer Objects)
-// Prevent overposting and keep your API contracts clean.
-// You don’t want to expose internal DB structure in your API.
-// Controls API payload, protects DB integrity
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
