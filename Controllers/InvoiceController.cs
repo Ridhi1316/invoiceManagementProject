@@ -56,13 +56,16 @@ namespace InvoiceManagement1.Controllers
         public async Task<IActionResult> Create([FromBody] InvoiceDto invoiceDto)
         {
             if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
+            {
+                var errors = ModelState.Values.SelectMany(v => v.Errors)
+                                            .Select(e => e.ErrorMessage)
+                                            .ToList();
+                return BadRequest(new { message = "Validation Failed", errors });
+            }
             var invoice = new Invoice
             {
                 CustomerName = invoiceDto.CustomerName,
                 Status = invoiceDto.Status,
-                TotalAmount = invoiceDto.TotalAmount,
                 Items = invoiceDto.Items?.Select(item => new InvoiceItem
                 {
                     Description = item.Description,
@@ -71,10 +74,9 @@ namespace InvoiceManagement1.Controllers
                 }).ToList()
             };
 
-            var resultMessage = await _repository.CreateAsync(invoice);
+            invoice.TotalAmount = invoice.Items.Sum(i => i.Quantity * i.UnitPrice);
 
-            if (resultMessage.Contains("already exists"))
-                return Conflict(new { message = resultMessage });
+            await _repository.CreateAsync(invoice);
 
             return CreatedAtAction(nameof(GetById), new { id = invoice.Id }, invoice);
         }

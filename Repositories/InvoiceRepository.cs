@@ -80,23 +80,11 @@ namespace InvoiceManagement1.Repositories
 
         public async Task<string> CreateAsync(Invoice invoice)
         {
-            var existingInvoice = await _context.Invoices
-                .FirstOrDefaultAsync(i =>
-                    (i.CustomerName == invoice.CustomerName &&
-                    i.Status == invoice.Status) ||
-                    i.TotalAmount == invoice.TotalAmount);
-
-            if (existingInvoice != null)
-            {
-                return "Invoice already exists.";
-            }
-
             await _context.Invoices.AddAsync(invoice);
             await _context.SaveChangesAsync();
 
             return "Invoice created successfully.";
         }
-
 
         public async Task UpdateAsync(Invoice invoice)
         {
