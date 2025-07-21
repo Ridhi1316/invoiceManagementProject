@@ -9,7 +9,8 @@ namespace InvoiceManagement1.Models
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Customer name is required.")]
+        [Required]
+        [RegularExpression("^(Draft|Sent|Paid|Overdue)$", ErrorMessage = "Status must be either Draft, Sent, Paid, or Overdue.")]
         public string CustomerName { get; set; } = string.Empty;
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
