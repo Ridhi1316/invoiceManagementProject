@@ -7,6 +7,7 @@
 /Users/ridhiarora/Documents/InvoiceManagement1/obj/Debug/net8.0/InvoiceManagement1.MvcApplicationPartsAssemblyInfo.cache
 /Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/bin/Debug/net8.0/appsettings.Development.json
 /Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/bin/Debug/net8.0/appsettings.json
+/Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/bin/Debug/net8.0/appsettings.Production.json
 /Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/bin/Debug/net8.0/global.json
 /Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/bin/Debug/net8.0/MvcTestingAppManifest.json
 /Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/bin/Debug/net8.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
@@ -505,6 +506,7 @@
 /Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/obj/Debug/net8.0/InvoiceManagement1.csproj.CoreCompileInputs.cache
 /Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/obj/Debug/net8.0/InvoiceManagement1.MvcApplicationPartsAssemblyInfo.cs
 /Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/obj/Debug/net8.0/InvoiceManagement1.MvcApplicationPartsAssemblyInfo.cache
+/Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/obj/Debug/net8.0/InvoiceManagement1.sourcelink.json
 /Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/obj/Debug/net8.0/staticwebassets.build.json
 /Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/obj/Debug/net8.0/staticwebassets.development.json
 /Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/obj/Debug/net8.0/staticwebassets/msbuild.InvoiceManagement1.Microsoft.AspNetCore.StaticWebAssets.props
@@ -520,5 +522,3 @@
 /Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/obj/Debug/net8.0/InvoiceManagement1.pdb
 /Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/obj/Debug/net8.0/InvoiceManagement1.genruntimeconfig.cache
 /Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/obj/Debug/net8.0/ref/InvoiceManagement1.dll
-/Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/bin/Debug/net8.0/appsettings.Production.json
-/Users/ridhiarora/Documents/InvoiceManagementProject/InvoiceManagement1/obj/Debug/net8.0/InvoiceManagement1.sourcelink.json
